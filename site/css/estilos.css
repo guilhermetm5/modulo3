@@ -1,0 +1,122 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #a89e6e;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+/* Paleta de cores  */
+
+.bg-primary-color {
+    background-color: #5c4e30;
+}
+
+.bg-secondary-color {
+    background-color: #ece8e2;
+}
+
+.color3 {
+    background-color: #be9039;
+}
+
+.borda-legal {
+    border-radius: 20px;
+}
+
+.sem-borda {
+    border: none;
+}
+
+.teste {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.582),
+        0 10px 10px 0 rgba(0, 0, 0, 0.425),
+        0 10px 10px 0 rgba(0, 0, 0, .2);
+}
+
+.card {
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 0 2em 1em -0.7em #242020;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+    color: #292929;
+    padding: 15px 0;
+    margin-top: 10px;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+
+/* .footer-contato {
+    width: 100px;
+} */
+.img-final {
+    width: 100%;
+    border: none;
+    margin: 20px;
+}
+
+.butao a {
+    text-decoration: none;
+    color: white;
+}
+
+.butao {
+    width: 100%;
+}
+
+.fonte-branca {
+    color: white;
+}
+
+.fundo {
+    background-color: #242020;
+}
+
+.vermelho {
+    color: red;
+}
+
+.verde {
+    color: green;
+}
+
+/* .centralizado {
+    text-align: center;
+    align-items: center;
+} */
+.espacamento {
+    margin: 30px;
+}
+
+.cima {
+    margin-top: 10px;
+}
+
+/* .menor {
+    width: 90%;
+} */
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+@media screen {
+    
+}
