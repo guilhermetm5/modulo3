@@ -1,5 +1,5 @@
 REM   Script: entrega2
-REM   quase la
+REM   m
 
 CREATE TABLE cliente ( 
     id_cliente INTEGER, 
@@ -29,10 +29,6 @@ INSERT INTO cliente (id_cliente, nome, cpf) VALUES (1, 'Rosa Bege', '0090030004'
 INSERT INTO cliente (id_cliente, nome, cpf) VALUES (1, 'Ana Maria', '0050523000');
 
 SELECT * FROM cliente;
-
-INSERT INTO vendedor (id_vendedor, nome) VALUES (1, 'Robernilson') 
-INSERT INTO vendedor (id_vendedor, nome) VALUES (2, 'Fabilson') 
-INSERT INTO vendedor (id_vendedor, nome) VALUES (3, 'Amarilson');
 
 INSERT INTO vendedor (id_vendedor, nome) VALUES (1, 'Robernilson');
 
@@ -76,10 +72,6 @@ SELECT * FROM pedido;
 
 UPDATE pedido 
     SET valor = 129.99 
-    WHERE idcliente = 2;
-
-UPDATE pedido 
-    SET valor = 129.99 
     WHERE id_cliente = 2;
 
 UPDATE pedido 
@@ -90,11 +82,9 @@ SELECT * FROM pedido;
 
 CREATE TABLE produto ( 
     id_produto INTEGER, 
-    nome VARCHAR2(20), 
+    nome VARCHAR2(20) NOT NULL, 
     peso NUMBER(5,2) 
 );
-
-INSERT INTO produto (id_produto, nome, peso) VALUES (1, 'Carro de Controle Remoto', 5.0);
 
 INSERT INTO produto (id_produto, nome, peso) VALUES (2, 'Boneca Barbie', 1.0);
 
@@ -108,8 +98,6 @@ SELECT * FROM produto;
 
 ALTER TABLE pedido ADD id_produto INTEGER;
 
-ALTER TABLE pedido ADD CONSTRAINT id_produto_fk FOREIGN KEY (id_produto) REFERENCES produto(id_produto);
-
 SELECT * FROM pedido;
 
 ALTER TABLE produto ADD CONSTRAINT id_produto_pk PRIMARY KEY (id_produto);
@@ -121,4 +109,19 @@ SELECT * FROM pedido;
 SELECT cliente.nome, pedido.valor 
 FROM cliente 
 INNER JOIN pedido ON cliente.id_cliente = pedido.id_cliente;
+
+-- Criando uma tabela fornecedor 
+CREATE TABLE fornecedor (
+cnpj INTEGER,
+nome VARCHAR2(20) NOT NULL,
+CONSTRAINT cnpj_pk PRIMARY KEY (cnpj)
+);
+
+
+-- CONSTRAINTs para cliente e vendedor
+ALTER TABLE cliente MODIFY nome VARCHAR2(20) NOT NULL;
+ALTER TABLE cliente MODIFY cpf  VARCHAR2(20) UNIQUE;
+
+ALTER TABLE vendedor MODIFY nome VARCHAR2(20) NOT NULL;
+
 
