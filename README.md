@@ -16,11 +16,25 @@
 
 -A primeira versão tem uma base já
 -A segunda tera mais seguranca usando diferentes visibilidades
+- Estou começando esse projeto em java espera terminar antes de avaliar meu trabalho.
+- 22/01/2024 - Terminado! :)
 
-4- Estou começando esse projeto em java espera terminar antes de avaliar meu trabalho.
 
 FRONT END
 - melhorei as cores e espero ajeitar a responsividade que nao colabora.
+
+  Atualização de 22/01/2024
+Front END
+
+1- Melhorado a responsividade da página, e novas cores.
+
+BACK END
+
+1- Terminei o bendito e dor de "cabeçuoso" CRUD de uma Agência de Viagens com java, JDBC usando o SQL.
+2- So tém uma tabela por enquanto (Clientes), mas ao final terá mais 3.
+3- Implementei um pequeno menu para adicionar novas informações
+4- O codigo foi testado usando o SQLMYADM e APACHE, que podem ser encontrados no XAMPP de graça.
+
 
 ------------------------------------------------------------------------------------------------------------
 
